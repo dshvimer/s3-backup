@@ -1,0 +1,34 @@
+{
+    "Id": "Policy1558118172840",
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1558118130195",
+            "Action": [
+                "s3:DeleteObject",
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::mparticle-takehome/*",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::421873177185:user/mparticle-takehome"
+                ]
+            }
+        },
+        {
+            "Sid": "Stmt1558118167448",
+            "Action": [
+                "s3:ListBucket"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::mparticle-takehome",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::421873177185:user/mparticle-takehome"
+                ]
+            }
+        }
+    ]
+}

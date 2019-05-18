@@ -1,0 +1,6 @@
+.env
+credentials.csv
+*.tar.gz
+__pycache__/
+*.pem
+backup.bash
