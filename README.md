@@ -1,4 +1,7 @@
-On an ubuntu machine, clone this repository and navigate into it
+## Setup
+On an ubuntu machine with python3 and pip installed, clone this repository and navigate into it
+
+Install boto3 dependency by running ```pip install -r requirements.txt```
 
 Create a file named ```backup.bash``` with the contents:
 
@@ -14,15 +17,13 @@ export BACKUP_HOME=<Path to this repo>
 python $BACKUP_HOME/upload.py
 ```
 
-Run ```sudo chmod +x install.bash```
 Then ```sudo chmod +x backup.bash```
 
-Install the Cron job by running ```./install.bash```
-
-Run ```crontab -d``` then the following to the file
+Add cron job by running ```crontab -e``` then add the following to the bottom of the file
 ```
-MAILTO=dshvimer@protonmail.com
+MAILTO=email@address.com
 0 0 * * * /home/ubuntu/daily-s3-backup/backup.bash
 ```
+If the repo was cloned into another location the path to ```backup.bash``` should be changed to reflect that
 
-Enjoy the backed up files
+Files will be backed up to S3 at midnight every night
