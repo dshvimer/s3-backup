@@ -38,4 +38,4 @@ Add cron job by running ```crontab -e``` then add the following to the bottom of
 ```
 If the repo was cloned into another location the path to ```backup.bash``` should be changed to reflect that
 
-Files will be backed up to S3 at midnight every night. An email is sent
+Files will be backed up to S3 at midnight every night. An email is sent with the log file contents
