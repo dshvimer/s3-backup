@@ -13,7 +13,7 @@
             "Resource": "arn:aws:s3:::mparticle-takehome/*",
             "Principal": {
                 "AWS": [
-                    "arn:aws:iam::421873177185:user/mparticle-takehome"
+                    "arn:aws:iam::000000000000:user/mparticle-takehome"
                 ]
             }
         },
@@ -26,7 +26,7 @@
             "Resource": "arn:aws:s3:::mparticle-takehome",
             "Principal": {
                 "AWS": [
-                    "arn:aws:iam::421873177185:user/mparticle-takehome"
+                    "arn:aws:iam::00000000000:user/mparticle-takehome"
                 ]
             }
         }
