@@ -11,6 +11,8 @@ sudo apt install mailutils
 > Select default domain
 ```
 
+Clone this repo then enter into the new directory (```s3-backup```) by default
+
 Install boto3 dependency by running ```pip install -r requirements.txt```
 
 Create a file named ```backup.bash``` with the contents:
@@ -32,7 +34,7 @@ Then ```sudo chmod +x backup.bash```
 
 Add cron job by running ```crontab -e``` then add the following to the bottom of the file
 ```
-0 0 * * * /home/ubuntu/daily-s3-backup/backup.bash
+0 0 * * * /home/ubuntu/s3-backup/backup.bash
 ```
 If the repo was cloned into another location the path to ```backup.bash``` should be changed to reflect that
 
