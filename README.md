@@ -13,7 +13,7 @@ sudo apt install mailutils
 
 Clone this repo then enter into the new directory (```s3-backup```) by default
 
-Install boto3 dependency by running ```pip install -r requirements.txt```
+Install boto3 dependency by running ```pip3 install -r requirements.txt```
 
 Create a file named ```backup.bash``` with the contents:
 
